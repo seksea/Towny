@@ -3568,6 +3568,10 @@ public class TownySettings {
 		return getDouble(ConfigNodes.ECO_NATION_RENAME_COST);
 	}
 
+	public static double getNationCapitalChangeCost() {
+		return getDouble(ConfigNodes.ECO_NATION_CAPITAL_CHANGE_COST);
+	}
+
 	public static double getTownSetMapColourCost() {
 		return getDouble(ConfigNodes.ECO_TOWN_MAPCOLOUR_COST);
 	}
