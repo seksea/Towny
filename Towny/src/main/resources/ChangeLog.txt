@@ -10843,3 +10843,29 @@ v0.92.0.11:
     - Displays name, uuid and town/nation level information.
   - Fix consider_enemies_outlaws config setting not applying to towns who are enemies with each other.
   - Fix Nation's newCapitalFinder being able to pick a conquered town.
+  - Separate public town/nation spawn default and maximum cost configs, courtesy of kaanalp28 with PR #8160. (First-Time Contributor!)
+  - New Config Option: economy.spawn_travel.price_town_public_spawn_travel_maximum
+    - Default: 10.0
+    - Maximum cost to use /town spawn [town] that mayors can set using /t set spawncost.
+    - You can disable this setting by setting price_allow_mayors_to_override_public_spawn_cost to false. This will use the price_town_public_spawn_travel option to set a mandatory price.
+  - Allow server owners to set a capital change cost, or for other plugins to modify it, courtesy of Veyronity with PR #8166.
+    - Configurable cost and NationKingChangeEvent#setCost now available.
+  - New Config Option: economy.nation_capital_change_cost
+    - Default: 0
+    - The cost of a nation changing its capital
+  - Fix unclaiming near to outposts while min_adjacent_claims feature is in use.
+    - Closes #7891.
+  - Fix gradients not working when parsed through resident.formattedName().
+  - Fix incorrect color for overclaimed upkeep, courtesy of SulkyWhale with PR #8173.
+  - Fix spacing for perm line after changing perms, courtesy of SulkyWhale with PR #8174.
+  - Add config option to ingore ruined town in claiming distance check rules, courtesy of HydrolienF with PR #8178. (First-Time Contributor!)
+  - New Config Option: claiming.distance_rules.min_distances_ignored_for_ruined_towns
+    - Default: false
+    - If true, the below settings: min_plot_distance_from_town_plot and min_distance_from_town_homeblock 
+      will be ignored for towns that are ruined. Setting to false will keep all towns separated the same.
+  - Bump net.coreprotect:coreprotect from 23.1 to 23.2.
+  - Add a config option to allow dispensers damaging protected entities in PvP plots, courtesy of Veyronity with PR #8180.
+  - New Config Option: protection.are_mob_types_protected_against_block_projectile_sources
+    - Default: true
+    - Setting this to false will allow block projectile sources, namely dispensers, to harm the above protected
+      mobs (using potions, arrows, etc.), if they're in the same townblock and PvP is enabled.
