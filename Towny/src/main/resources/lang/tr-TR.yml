@@ -122,6 +122,7 @@ nation_help_15: "Ulusun bankasına para yatır."
 nation_help_16: "Ulusu silmek için kullanılır."
 nation_help_17: "Sakinlere rütbe eklemek veya çıkarmak için kullanılır."
 nation_help_18: "Yardım için /n rank komutunu kullan."
+nation_help_19: "Ulusunuza ait karakollara ışınlanmak için kullanılır."
 nation_list_help_0: "Belirtilen sayfayı görüntüleyin."
 nation_list_help_1: "Ulusları, belirtilen sayfayla birlikte sakinsayısına göre listeleyin."
 nation_list_help_2: "Ulusları kasaba sayısına göre, belirtilen sayfa ile listeleyin."
@@ -1220,7 +1221,6 @@ towny_prices_claiming_outposts: '&e[Claiming] &2Karakollar: &a%s'
 towny_prices_upkeep_based_on: '&7Kasaba vergisi, &a%s'
 towny_prices_upkeep_num_plots: 'arsa sayısı.'
 towny_prices_upkeep_town_level: 'kasaba seviyesi (sakinlerin sayısı.)'
-towny_prices_overclaimed_based_on: '&8Fazla talep edilen vergi, &a%s %s değerine bağlıdır'
 towny_prices_overclaimed_num_plots: 'aşırı talep edilen parsellerin sayısı *'
 towny_prices_overclaimed_flat_cost: 'sabit bir maliyet'
 towny_prices_townname: '&cKasaba: &b%s'

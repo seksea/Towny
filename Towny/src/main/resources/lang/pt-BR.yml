@@ -123,6 +123,7 @@ nation_help_15: "Deposita dinheiro no banco da nação."
 nation_help_16: "Usado para excluir sua nação."
 nation_help_17: "Usado para adicionar ou remover classificações de residentes."
 nation_help_18: "Dê o comando /n rank ? para obter ajuda."
+nation_help_19: "Used to teleport to the outposts owned by your nation's towns."
 nation_list_help_0: "Exibir a página especificada."
 nation_list_help_1: "Lista de nações por contagem de residentes, com a página especificada."
 nation_list_help_2: "Lista de nações por contagem de cidades, com a página especificada."
@@ -1316,7 +1317,6 @@ towny_prices_outposts_upkeept: '&7Outposts têm um custo de manutenção diário
 towny_prices_upkeep_based_on: '&7A manutenção da cidade é baseada no &a%s'
 towny_prices_upkeep_num_plots: 'número de terrenos.'
 towny_prices_upkeep_town_level: 'nível da cidade (Número de residentes)'
-towny_prices_overclaimed_based_on: '&8Sobrescrita é baseada em &a %s %s'
 towny_prices_overclaimed_num_plots: 'o número de parcelas sobrecargadas *'
 towny_prices_overclaimed_flat_cost: 'um custo fixo de'
 towny_prices_townname: '&cCidade: &b%s'
