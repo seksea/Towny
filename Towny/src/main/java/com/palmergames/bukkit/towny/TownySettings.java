@@ -2253,7 +2253,7 @@ public class TownySettings {
 	}
 
 	public static boolean isHideTownBalanceEnabled() {
-		return getBoolean(ConfigNodes.ECO_BANK_HIDE_TOWN_BALANCE_ENABLED);
+		return getBoolean(ConfigNodes.ECO_BANK_HIDE_TOWN_BALANCE);
 	}
 
 	public static boolean isEcoClosedEconomyEnabled() {

@@ -2945,7 +2945,7 @@ public enum ConfigNodes {
 			"false",
 			"",
 			"# When true town and nations with a bank balance of less than or equal to zero will not appear on the town and nation lists."),
-	ECO_BANK_HIDE_TOWN_BALANCE_ENABLED(
+	ECO_BANK_HIDE_TOWN_BALANCE(
 			"economy.banks.hide_town_balance",
 			"false",
 			"",
