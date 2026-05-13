@@ -346,7 +346,7 @@ public class TownyFormatter {
 		screen.addComponentOf("firespread", colourKeyValue(translator.of("firespread"), (town.isFire() || world.isForceFire()) ? translator.of("status_on"): translator.of("status_off"))); 
 		screen.addComponentOf("mobspawns", colourKeyValue(translator.of("mobspawns"), (town.hasMobs() || town.isAdminEnabledMobs() || world.isForceTownMobs()) ? translator.of("status_on"): translator.of("status_off")));
 
-		if (TownySettings.getTownRuinsEnabled() && town.isRuined()) {
+		if (TownySettings.getTownRuinsEnabled() && town.isRuined() && (!TownySettings.isHideTownRuinedStatusEnabled() || isSenderAdmin)) {
 			TownRuinUtil.addRuinedComponents(town, screen, translator);
 
 		// Only display the remaining fields if town is not ruined

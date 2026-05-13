@@ -3521,6 +3521,12 @@ public enum ConfigNodes {
 			"# If a Town has less claims than max_duration hours, those claims' permissions are opened up much more slowly with hours passing between",
 			"# plots opening up, ie: 36 claims and 72 max hours = 1 claim every 2 hours.",
 			"# This system is meant to give players across many time zones the chance to loot a town when it falls into ruin."),
+	TOWN_RUINING_HIDE_TOWN_RUINED_STATUS(
+			"town_ruining.town_ruins.hide_town_ruined_status",
+			"false",
+			"",
+			"# Hide the fact that a town is ruined from other players.",
+			"# Towns will no longer show as ruined when a player tries to look up the town with `/town <townName>`"),
 	
 	TOWN_RUINING_EMPTY_TOWNS_BECOME_RUINS(
 			"town_ruining.empty_towns_become_ruins",
