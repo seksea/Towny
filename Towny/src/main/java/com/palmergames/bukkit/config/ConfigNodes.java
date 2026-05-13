@@ -2949,9 +2949,9 @@ public enum ConfigNodes {
 			"economy.banks.hide_town_balance_on_status_screen",
 			"false",
 			"",
-			"# When true a towns balance will be hidden from players not a resident of the town when using `/town <townName>`",
-			"# This will stop people from being able to check which towns are currently near bankruptcy, and snipe them",
-			"# the second they go bankrupt."),
+			"# When true a town's bank balance will be hidden from players who are not residents of the town when using `/town <townName>`",
+			"# This can stop people from being able to check which towns are currently near bankruptcy, and snipe them",
+			"# the second they go bankrupt (when the Town Ruining feature is enabled.)"),
 
 	ECO_CLOSED_ECONOMY("economy.closed_economy", "", ""),
 	ECO_CLOSED_ECONOMY_SERVER_ACCOUNT(
