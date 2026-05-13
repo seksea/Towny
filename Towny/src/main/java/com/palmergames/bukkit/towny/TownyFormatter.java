@@ -281,13 +281,14 @@ public class TownyFormatter {
 	 * @return StatusScreen containing the results.
 	 */
 	public static StatusScreen getStatus(Town town, CommandSender sender) {
-
+		boolean isSenderAdmin = TownyUniverse.getInstance().getPermissionSource().isTownyAdmin(sender);
+		
 		final Translator translator = Translator.locale(sender);
 		StatusScreen screen = new StatusScreen(sender);
 		TownyWorld world = town.getHomeblockWorld();
 
 		// ___[ Raccoon City ]___ (With hover for admins.)
-		if (TownyUniverse.getInstance().getPermissionSource().isTownyAdmin(sender)) {
+		if (isSenderAdmin) {
 			Component adminComp = Component.text("Name: " + town.getName()).appendNewline()
 									.append(Component.text("UUID: " + town.getUUID())).appendNewline()
 									.append(Component.text("TownLevel: " + town.getLevelNumber()
@@ -351,7 +352,7 @@ public class TownyFormatter {
 		// Only display the remaining fields if town is not ruined
 		} else {
 			// | Bank: 534 coins
-			if (TownyEconomyHandler.isActive())
+			if (TownyEconomyHandler.isActive() && (!TownySettings.isHideTownBalanceEnabled() || isSenderAdmin))
 				MoneyUtil.addTownMoneyComponents(town, translator, screen);
 
 			// Mayor: MrSand

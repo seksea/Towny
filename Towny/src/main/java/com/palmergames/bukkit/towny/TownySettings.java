@@ -2252,6 +2252,10 @@ public class TownySettings {
 		return getBoolean(ConfigNodes.ECO_BANK_HIDE_ZERO_OR_LESS_BANK_ACCOUNTS_ON_LISTS);
 	}
 
+	public static boolean isHideTownBalanceEnabled() {
+		return getBoolean(ConfigNodes.ECO_BANK_HIDE_TOWN_BALANCE_ENABLED);
+	}
+
 	public static boolean isEcoClosedEconomyEnabled() {
 		
 		return getBoolean(ConfigNodes.ECO_CLOSED_ECONOMY_ENABLED);
